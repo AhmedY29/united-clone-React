@@ -13,31 +13,9 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import { FaSuitcase } from "react-icons/fa6";
 
 function Hero() {
-  let backgroundImg = [
-    "./src/assets/background-1.png",
-    "./src/assets/background-2.png",
-    "./src/assets/background-3.png",
-    "./src/assets/background-4.png",
-    "./src/assets/background-5.png",
-    "./src/assets/background-6.png",
-  ];
-  let bgUrl = "./src/assets/background-1.png";
-
-  let index = 0;
-  setInterval(() => {
-    bgUrl = backgroundImg[index];
-    index++;
-    index == 5 ? (index = 0) : "";
-    console.log(backgroundImg[index]);
-    console.log("b");
-  }, 5000);
-
   return (
     <>
-      <section
-        style={{ backgroundImage: `url(${bgUrl})` }}
-        className="hero-section flex justify-center items-center w-full h-[80vh] relative  "
-      >
+      <section className="hero-section bg-[url(https://media.united.com/assets/m/730a5b86b08a82b3/original/1265_Starlink_BelowTheFold_500x300-new.jpg)] bg-cover flex justify-center items-center w-full h-[80vh] relative  ">
         <div className="hero-content flex gap-20 w-[80%]">
           <div className="hero-form lg:block hidden flex-1/2 w-full ">
             <div className="hero-form-btns flex rounded-t-xl overflow-hidden">
